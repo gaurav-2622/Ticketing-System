@@ -12,12 +12,13 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 public class User {
-    @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
     @NotBlank
     @Size(min = 3, max = 50)
+    @Column(unique = true)
     private String username;
 
     @NotBlank
@@ -25,7 +26,6 @@ public class User {
     @Size(max = 100)
     @Column(unique = true)
     private String email;
-
 
     @NotBlank
     @Size(min = 8, max = 255)

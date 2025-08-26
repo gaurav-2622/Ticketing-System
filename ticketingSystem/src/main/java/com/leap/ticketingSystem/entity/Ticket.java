@@ -73,7 +73,7 @@ public class Ticket {
         return "TK-" + System.currentTimeMillis();
     }
 
-    // Getters and Setters
+    // All getters and setters remain the same...
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

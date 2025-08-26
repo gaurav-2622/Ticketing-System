@@ -2,6 +2,7 @@ package com.leap.ticketingSystem.service;
 
 import com.leap.ticketingSystem.entity.User;
 import com.leap.ticketingSystem.repository.UserRepository;
+import com.leap.ticketingSystem.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,5 +1,13 @@
 package com.leap.ticketingSystem.controller;
 
+import com.leap.ticketingSystem.dto.*;
+import com.leap.ticketingSystem.entity.Comment;
+import com.leap.ticketingSystem.entity.Ticket;
+import com.leap.ticketingSystem.entity.User;
+import com.leap.ticketingSystem.entity.enums.Priority;
+import com.leap.ticketingSystem.entity.enums.TicketStatus;
+import com.leap.ticketingSystem.service.AuthService;
+import com.leap.ticketingSystem.service.TicketService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
